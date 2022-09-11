@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/slides.css">
 
     <!-- JQuery Ref -->
     <link rel="stylesheet" href="css/jquery.fancybox.min.css">
@@ -56,13 +57,13 @@
                   <a href="#about-us" class="nav-link">About Us</a>
                 </li>
                 <li>
-                  <a href="#our-projects" class="nav-link">Our Projects</a>
+                  <a href="projects.html" class="nav-link">Our Projects</a>
                 </li>
                 <li>
                   <a href="#images-section" class="nav-link">Images</a>
                 </li>
                 <li>
-                  <a href="#team-section" class="nav-link">Meet Our Team</a>
+                  <a href="meet-us.html" class="nav-link">Meet Our Team</a>
                 </li>
                 <li>
                   <a href="sponsors.html#sponsors" class="nav-link">Sponsors</a>
@@ -102,6 +103,9 @@
             <h1 style="font-style: italic; color: rgb(240,190,60);">UBC ThunderBikes</h1>
               <div class="col-md-2 mt-lg-1 text-left">
                 <h3 style=" color: rgb(255,255,255); width: 500px;">Interested in motorcycles, racing, or electric vehicles? Join UBC's electric motorcycle engineering team!</h3>
+              </div>
+              <div class="col-md-2 mt-lg-1 text-left">
+                <h3 style=" color: rgb(255,255,255); width: 500px;">Recruitment Info Session on Sunday September 11 at 4pm in the EDC Bay!</h3>
                 </div>
             <p class="mb-4"><a href="https://linktr.ee/ubcthunderbikes" class="btn btn-primary mr-2 mb-2">Apply Now!</a></p>
           </div>
@@ -113,7 +117,28 @@
     <section class="site-section" id="about-us">
       <div class="container">
         <div class="row mb-5" style="margin-bottom: 0px;">
-          <div class="col-lg-5 ml-auto mb-5 order-md-2" data-aos="fade">
+          <div class="col-lg-5 ml-auto mb-5 order-md-2 slideshow-container" data-aos="fade">
+<!--
+            <div class="mySlides1">
+              <img src="images/bike-1.png" style="height: 700px; width:100%; object-fit: cover;" alt="Image" class="centered rounded" >
+              <div class="text"></div>
+            </div>
+
+            <div class="mySlides1">
+              <img src="images/projects/CCC_1.jpg" style="height: 700px; width:50%; object-fit: cover;" alt="Image" class="centered rounded">
+              <div class="text"></div>
+            </div>
+
+             <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+
+            <br>
+
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1,0)"></span>
+              <span class="dot" onclick="currentSlide(2,0)"></span>
+            </div>
+-->
             <img src="images/bike-1.png" alt="Image" class="img-fluid rounded">
           </div>
           <div class="col-lg-6 order-md-1" data-aos="fade">
@@ -202,6 +227,8 @@
           <div class="col-lg-6" stylr="position: relative;">
             <!-- Images  style="-webkit-transform:rotate(180deg); -moz-transform: rotate(180deg); -ms-transform: rotate(180deg); -o-transform: rotate(180deg); transform: rotate(180deg);"-->
             <div class="owl-carousel slide-one-item-alt">
+              <img src="images/ImagineDay.jpg" alt="Image" style="height: 400px; width: 75%; object-fit: cover;">
+              <img src="images/ImagineDay2.jpg" alt="Image" style="height: 400px; width: 75%; object-fit: cover;">
               <img src="images/LSEBF-racepic.jpg" alt="Image" style="height: 400px; width: 75%; object-fit: cover;">
               <img src="images/LSEBF-racepic2.jpg" alt="Image" class="pl-0 pr-4" style="height: 400px; width: 75%; object-fit: cover;">
               <img src="images/LSEBF-teampic.jpg" alt="Image" class="pl-4 pr-4" style="height: 400px; width: 75%; object-fit: cover;">
@@ -228,6 +255,21 @@
           <div class="col-lg-5 ml-auto">
             <!-- Descriptions -->
             <div style="margin-top: auto; margin-bottom: auto;" class="owl-carousel slide-one-item-alt-text">
+
+              <!-- Description p1 -->
+              <div>
+                <p style="line-height:130%; margin-bottom: 10px;" class="lead">Imagine Day 2022</p>
+                <p style="line-height:140%;">Our team at the ThunderBikes booth for Imagine Day 2022</p>
+                <!-- <p><a href="#" class="btn btn-primary mr-2 mb-2">Learn More</a></p> -->
+              </div>
+
+              <!-- Description p1 -->
+              <div>
+                <p style="line-height:130%; margin-bottom: 10px;" class="lead">Imagine Day 2022</p>
+                <p style="line-height:140%;">Julian Wong and Deepak Roshan at the ThunderBikes booth for Imagine Day 2022</p>
+                <!-- <p><a href="#" class="btn btn-primary mr-2 mb-2">Learn More</a></p> -->
+              </div>
+
               <!-- Description p1 -->
               <div>
                 <p style="line-height:130%; margin-bottom: 10px;" class="lead">Lost Sierra E-bike Festival 2019</p>
@@ -600,5 +642,6 @@
   <script src="js/jquery.fancybox.min.js">      </script>
   <script src="js/jquery.sticky.js">            </script>
   <script src="js/main.js">                     </script>
+  <script src="js/slides.js">                   </script>
   </body>
 </html>
