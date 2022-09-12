@@ -1,10 +1,8 @@
-var slideIndex = [0,0,0,0,0];
-var slideId = ["mySlides0","mySlides1", "mySlides2", "mySlides3", "mySlides4"]
 
-var dotIndex = [0,0,0,0,0];
-var dotId = ["dot0","dot1", "dot2", "dot3", "dot4"]
+
 
 let slideshow_count = document.getElementsByClassName("slideshow-container").length;
+var slideIndex = Array.from({length:slideshow_count}, (v, i) => 0);
 
 for(let i=0;i<slideshow_count;i++){
   insertDots(i);
@@ -25,9 +23,9 @@ function currentSlide(n, no) {
 function showSlides(n, no) {
 
   var i;
-  var x = document.getElementsByClassName(slideId[no]);
+  var x = document.getElementsByClassName("mySlides"+no);
   /*   var dots = document.getElementsByClassName("dot");*/
-  var dots = document.getElementsByClassName(dotId[no]);
+  var dots = document.getElementsByClassName("dot"+no);
   if (n >= x.length) {slideIndex[no] = 0}
   if (n < 0) {slideIndex[no] = x.length-1}
   for (i = 0; i < x.length; i++) {
